@@ -1,0 +1,230 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: "Poppins", sans-serif;
+}
+.navbar h1{
+    color:rgb(131, 15, 115);
+    font-size:40px;
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: rgba(238, 130, 238, 0.24);
+}
+.navbar-links
+{
+    display: flex;
+    column-gap: 20px;
+}
+.navbar-links a
+{
+    text-decoration: none;
+    color:rgb(145, 33, 145);
+}
+.navbar-links a:hover
+{
+    text-decoration: underline;
+}
+.fa-solid fa-bars
+{
+    color: rgb(131, 15, 115);
+}
+.togglebar
+{
+    display:none;
+}
+
+.side-navbar
+{
+    background-color:rgb(59, 5, 57);
+    width: 50%;
+    height: 100%;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: -50%;
+    transition: 2s;
+   
+}
+.sidenavbar-links a
+{
+    text-decoration: none;
+    color: white;
+
+}
+.sidenavbar-links a:hover
+{
+    text-decoration: underline;
+}
+.sidenavbar-link
+{
+    margin-top: 30px;
+    padding: 10px;
+}
+.header
+{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 20px;
+    font-size: x-large;
+    color: rgb(60, 19, 99);
+    font-weight: bold;
+    align-items: center;
+}
+.header-button
+{
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgb(131, 15, 115);
+    color: white;
+}
+.service{
+    margin: 10px;
+}
+.service1
+{
+    display: flex;
+    justify-content: space-between;
+}
+.service2
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.service2 div{
+    background-color: rgba(137, 89, 141, 0.178);
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.new-arrival
+{
+    display: flex;
+    margin: 5px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.new-arrival-container
+{
+    padding: 10px;
+    position: relative;
+    flex-basis: 20%;
+}
+.new-arrival button
+{
+    padding: 5%;
+    margin: 5%;
+    position: absolute;
+    left: 40px;
+    top: 140px;
+    border-radius: 20px;
+    border: none;
+    color: darkmagenta;
+    font-weight: bold;
+}
+.news-section
+{
+    display: flex;
+    color: rgb(59, 5, 57);
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px;
+}
+.news-section input{
+    width: 80vw;
+    padding: 10px;
+    border: solid 3px black;
+}
+.news-section button{
+    margin: 2px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color:rgb(59, 5, 57); ;
+}
+.footer
+{
+    background-color: rgb(59, 5, 57);
+    color: white;
+}
+.icon-con
+{
+    display: flex;
+    justify-content: center;
+    
+}
+.icon-con i
+{
+    padding: 10px;  
+    font-size: x-large;
+}
+.product-section
+{
+    margin: 10px;
+}
+.product-search {
+    display: flex;
+
+    width: 80%;
+    border:5px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    }
+    .product-search input:focus{
+    outline: none;
+    }
+    .products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    }
+    .product-box
+    {
+        flex-basis: 20%;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+@media screen and (max-width:700px) {
+    .togglebar
+    {
+        display: block
+    }
+    .navbar-links
+    {
+        display: none;
+    }
+    .headerimage
+    {
+        display: none;
+    }
+    .service1
+    {
+        display: none;
+    }
+    .service2{
+        flex-direction: column;
+    }
+}
